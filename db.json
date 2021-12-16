@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "làm bài tập",
+      "status": true
+    },
+    {
+      "id": 1020,
+      "title": "choi game",
+      "status": false
+    },
+    {
+      "id": 4861,
+      "title": "aaaa",
+      "status": true
+    },
+    {
+      "id": 2294,
+      "title": "bbbb",
+      "status": false
+    }
+  ]
+}
