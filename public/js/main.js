@@ -82,10 +82,10 @@ function renderUI(arr) {
             </div>
             <div class="option">
                 <button class="btn btn-update" onclick = editTodo(${item.id})>
-                    <img src="./public/img/pencil.svg" alt="icon" />
+                    <img src="./img/pencil.svg" alt="icon" />
                 </button>
                 <button class="btn btn-delete" onclick = deleteTodo(${item.id})>
-                    <img src="./public/img/remove.svg" alt="icon" />
+                    <img src="./img/remove.svg" alt="icon" />
                 </button>
             </div>
         </div>
