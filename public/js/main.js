@@ -35,12 +35,12 @@ function autoID(){
 
 // API lay danh sach todo
 function getTodosAPI() {
-    return axios.get('http://localhost:3000/todos');
+    return axios.get('/todos');
 }
 
 // API tao danh sach
 function createTodosAPI(title) {
-    return axios.post('http://localhost:3000/todos', {
+    return axios.post('/todos', {
         id: autoID(),
         title: title,
         status: false,
@@ -49,17 +49,17 @@ function createTodosAPI(title) {
 
 // API xoa todo
 function deleteTodoAPI(id){
-    return axios.delete(`http://localhost:3000/todos/${id}`);
+    return axios.delete(`/todos/${id}`);
 }
 
 // API editTitle todo
 function updateTodoAPI(title, id){
-    return axios.PATCH(`http://localhost:3000/todos/${id}`, {title:title});
+    return axios.PATCH(`/todos/${id}`, {title:title});
 }
 
 // API edit status
 function editStatusAPI(id, status){
-    return axios.PATCH(`http://localhost:3000/status/${id}`, {status:status})
+    return axios.PATCH(`/status/${id}`, {status:status})
 }
 
 // =========render UI, hien thi danh sach ra ngoai giao dien================================
@@ -82,10 +82,10 @@ function renderUI(arr) {
             </div>
             <div class="option">
                 <button class="btn btn-update" onclick = editTodo(${item.id})>
-                    <img src="./img/pencil.svg" alt="icon" />
+                    <img src="./public/img/pencil.svg" alt="icon" />
                 </button>
                 <button class="btn btn-delete" onclick = deleteTodo(${item.id})>
-                    <img src="./img/remove.svg" alt="icon" />
+                    <img src="./public/img/remove.svg" alt="icon" />
                 </button>
             </div>
         </div>
