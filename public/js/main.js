@@ -1,9 +1,9 @@
 /*
 Các chức năng có trong ứng dụng todolist
-1. Lấy danh sách cv hiện có (done)
-2. Thêm cv (done)
+1. Lấy danh sách cv hiện có 
+2. Thêm cv 
 3. Sửa cv
-4. Xóa cv (done)
+4. Xóa cv 
 5. Lọc cv theo trạng thái
 6. Thay đổi trạng thái
 */
